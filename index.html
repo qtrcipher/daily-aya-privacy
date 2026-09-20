@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Privacy Policy — Daily Aya | سياسة الخصوصية — آية يومية</title>
+<title>سياسة الخصوصية — آية يومية | Privacy Policy — Daily Aya</title>
 <style>
   :root {
     --green: #178560;
@@ -15,6 +15,7 @@
   }
   @media (prefers-color-scheme: dark) {
     :root {
+      --green: #63cba5;
       --text: #f2f2f7;
       --muted: #a1a1a6;
       --bg: #121413;
@@ -29,14 +30,14 @@
     line-height: 1.7;
   }
   header {
-    background: linear-gradient(135deg, var(--green) 0%, var(--green-dark) 100%);
+    background: linear-gradient(135deg, #178560 0%, #0e5c44 100%);
     color: #fff;
     text-align: center;
     padding: 3.5rem 1.5rem 3rem;
   }
-  header .mark { font-size: 3rem; line-height: 1; margin-bottom: 0.75rem; }
+  header .mark { font-size: 3rem; line-height: 1; margin-block-end: 0.75rem; }
   header h1 { font-size: 1.6rem; font-weight: 700; }
-  header p { opacity: 0.9; margin-top: 0.4rem; font-size: 1.05rem; }
+  header p { opacity: 0.9; margin-block-start: 0.4rem; font-size: 1.05rem; }
   main {
     max-width: 46rem;
     margin: 0 auto;
@@ -47,26 +48,28 @@
     border-inline-start: 4px solid var(--green);
     border-radius: 12px;
     padding: 1.25rem 1.5rem;
-    margin-bottom: 2.5rem;
+    margin-block-end: 2.5rem;
     font-weight: 600;
   }
-  section { margin-bottom: 3rem; }
+  section { margin-block-end: 3rem; }
   section h2 {
     color: var(--green);
     font-size: 1.35rem;
-    margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--card);
+    margin-block-end: 1rem;
+    padding-block-end: 0.5rem;
+    border-block-end: 2px solid var(--card);
   }
   section h3 { font-size: 1.05rem; margin: 1.4rem 0 0.4rem; }
   section p, section li { color: var(--text); }
   section ul { padding-inline-start: 1.4rem; margin: 0.4rem 0; }
   .muted { color: var(--muted); font-size: 0.95rem; }
   a { color: var(--green); }
-  .rtl { direction: rtl; text-align: right; }
+  header a { color: white; }
+  :focus-visible { outline: 3px solid currentColor; outline-offset: 4px; }
+  .rtl { direction: rtl; text-align: start; }
   hr.divider {
     border: none;
-    border-top: 2px solid var(--card);
+    border-block-start: 2px solid var(--card);
     margin: 0 0 3rem;
   }
   footer {
@@ -78,78 +81,63 @@
 </style>
 </head>
 <body>
-
 <header>
   <div class="mark">آية</div>
-  <h1>Daily Aya — آية يومية</h1>
-  <p>Privacy Policy · سياسة الخصوصية</p>
+  <h1>آية يومية — <span lang="en" dir="ltr">Daily Aya</span></h1>
+  <p>سياسة الخصوصية · <span lang="en">Privacy Policy</span></p>
+  <nav aria-label="اللغة / Language"><a href="#arabic">العربية</a> · <a href="#english" lang="en">English</a></nav>
 </header>
-
 <main>
-
-  <!-- English -->
-  <section lang="en">
-    <h2>Privacy Policy</h2>
-    <p class="muted">Effective date: July 8, 2026</p>
-
-    <div class="pledge" style="margin-top:1.25rem;">
-      Daily Aya does not collect, store, transmit, or share any personal data. None.
-    </div>
-
-    <h3>No data collection</h3>
-    <p>Daily Aya works entirely offline. The complete Quran text and translation are bundled inside the app. The app makes no network connections, requires no account, and contains no analytics, no advertising, and no third-party software of any kind.</p>
-
-    <h3>Everything stays on your device</h3>
-    <p>Your bookmarks, reading position, language choice, and text-size preferences are stored only on your device (and in your personal device backups, if you have those enabled). We have no access to them.</p>
-
-    <h3>Sharing</h3>
-    <p>If you choose to share a verse, the app uses the standard iOS share sheet. What you share, and where, is entirely under your control — the app itself sends nothing anywhere.</p>
-
-    <h3>Children</h3>
-    <p>Because the app collects no data at all, it is safe for users of any age.</p>
-
-    <h3>Changes to this policy</h3>
-    <p>If a future version of the app ever changes how data is handled (for example, optional audio streaming), this policy will be updated first and the change will be clearly noted here.</p>
-
-    <h3>Contact</h3>
-    <p>Questions about this policy: <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a></p>
-  </section>
-
-  <hr class="divider">
-
-  <!-- Arabic -->
-  <section lang="ar" class="rtl">
-    <h2>سياسة الخصوصية</h2>
-    <p class="muted">تاريخ السريان: ٨ يوليو ٢٠٢٦</p>
-
-    <div class="pledge" style="margin-top:1.25rem;">
-      تطبيق «آية يومية» لا يجمع أي بيانات شخصية ولا يخزّنها ولا يرسلها ولا يشاركها. إطلاقًا.
-    </div>
-
-    <h3>لا جمع للبيانات</h3>
-    <p>يعمل تطبيق «آية يومية» دون اتصال بالإنترنت بالكامل، فالنص القرآني والترجمة مضمّنان داخل التطبيق. لا يجري التطبيق أي اتصالات شبكية، ولا يتطلب حسابًا، ولا يحتوي على أدوات تحليلات أو إعلانات أو أي برمجيات من أطراف خارجية.</p>
-
-    <h3>كل شيء يبقى على جهازك</h3>
-    <p>علاماتك المرجعية وموضع قراءتك ولغة التطبيق وأحجام النصوص تُحفظ على جهازك فقط (وفي النسخ الاحتياطية الشخصية لجهازك إن كانت مفعّلة). لا نملك أي وسيلة للاطلاع عليها.</p>
-
-    <h3>المشاركة</h3>
-    <p>عند اختيارك مشاركة آية، يستخدم التطبيق نافذة المشاركة القياسية في iOS، وما تشاركه ووجهته يخضعان لتحكمك الكامل — فالتطبيق نفسه لا يرسل شيئًا إلى أي جهة.</p>
-
-    <h3>الأطفال</h3>
-    <p>لأن التطبيق لا يجمع أي بيانات على الإطلاق، فهو آمن للمستخدمين من جميع الأعمار.</p>
-
-    <h3>التغييرات على هذه السياسة</h3>
-    <p>إذا غيّر أي إصدار مستقبلي من التطبيق طريقة التعامل مع البيانات (مثل بث الصوت الاختياري)، فسيجري تحديث هذه السياسة أولًا مع توضيح التغيير هنا بجلاء.</p>
-
-    <h3>التواصل</h3>
-    <p>للاستفسار عن هذه السياسة: <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a></p>
-  </section>
-
+<section id="arabic" lang="ar" dir="rtl">
+<h2>سياسة الخصوصية</h2>
+<p class="muted">تاريخ السريان: ٨ يوليو ٢٠٢٦ · آخر تحديث: ٢٠ سبتمبر ٢٠٢٦</p>
+<div class="pledge">لا نجمع بيانات استخدامك لتطبيق «آية يومية» ولا نرسل بياناتك المحفوظة على الجهاز إلى خوادمنا. لا حسابات ولا إعلانات ولا تتبّع.</div>
+<h3>من نحن</h3>
+<p>يطوّر همام العبدالله تطبيق «آية يومية»، وهو تطبيق مجاني لقراءة القرآن الكريم والتأمل فيه. تنطبق هذه السياسة على الإصدارين ١٫١ و١٫٢.</p>
+<h3>ما الذي يُحفظ ولماذا؟</h3>
+<p>تعمل القراءة والبحث دون إنترنت؛ فالنص القرآني والترجمة والخطوط مضمّنة في التطبيق. تُحفظ العلامات المرجعية وموضع القراءة والملاحظات والتظليلات ولغة الواجهة ومظهرها وإظهار الترجمة وأحجام النصوص واختيارات الخطوط وحالة التذكير ووقته على جهازك لتوفير الوظائف التي تختارها. وقد تشملها النسخ الاحتياطية الشخصية لجهازك إذا فعّلتها. لا نستطيع الاطلاع على هذه البيانات.</p>
+<h3>التذكيرات والمشاركة والروابط</h3>
+<p>التذكير اليومي اختياري، ويتطلب إذنك للإشعارات ويُجدول محليًا على جهازك. يمكنك تعطيله من التطبيق أو إعدادات iOS. عند مشاركة آية كنص أو صورة، تختار أنت الوجهة عبر نافذة المشاركة في iOS. فتح سياسة الخصوصية أو رابط خارجي ينقلك إلى المتصفح؛ وقد تعالج خدمة الموقع بيانات الاتصال المعتادة وفق سياستها. لا تُرسل ملاحظاتك أو إعداداتك مع هذه الروابط.</p>
+<h3>الأساس والغرض من المعالجة</h3>
+<p>تعالج وظائف التطبيق بياناتك محليًا استجابةً لاختياراتك لتوفير القراءة والحفظ والتذكير. إذا راسلتنا للدعم، نستخدم بريدك ومحتوى رسالتك للرد على طلبك فقط؛ ولا نربط ذلك ببيانات استخدام التطبيق.</p>
+<h3>الأطراف الخارجية ونقل البيانات</h3>
+<p>لا يستخدم التطبيق Firebase أو أدوات تحليلات أو شبكات إعلانية أو حزم تتبّع. النصوص والخطوط المرخّصة موارد محلية لا تجمع البيانات. تُستضاف هذه الصفحة على GitHub Pages، وقد تعالج GitHub بيانات الاتصال اللازمة لاستضافة الموقع. تخضع خدمات البريد والنسخ الاحتياطي ووجهات المشاركة التي تختارها لسياساتها، وقد تعالج بياناتها خارج بلدك. لا ننقل بيانات قراءتك من التطبيق إلى خوادم خارجية.</p>
+<h3>الاحتفاظ والأمان</h3>
+<p>تبقى البيانات المحلية إلى أن تعدّلها أو تحذفها أو تحذف التطبيق. تخضع النسخ الاحتياطية لإعداداتك لدى مزوّدها. يعتمد التطبيق على حماية iOS للجهاز ومساحة التطبيق؛ احمِ جهازك برمز دخول. نحتفظ بمراسلات الدعم بقدر ما يلزم لمعالجة الطلب.</p>
+<h3>الاطلاع والحذف والمشاركة</h3>
+<p>يمكنك الاطلاع على ملاحظاتك وعلاماتك المرجعية وتعديلها أو حذفها داخل التطبيق، وتغيير تفضيلاتك من الإعدادات. يمكنك مشاركة الآيات كنصوص أو صور. لا توجد خدمة سحابية أو أداة لتصدير جميع بياناتك دفعة واحدة. لا نستطيع حذف بيانات جهازك عن بُعد؛ ولطلبات متعلقة برسائل الدعم، تواصل معنا.</p>
+<h3>الأطفال</h3>
+<p>التطبيق متاح للجمهور العام ولا يتطلب عمرًا أو حسابًا، ولا نجمع عبره بيانات شخصية من الأطفال أو غيرهم.</p>
+<h3>التغييرات والتواصل</h3>
+<p>نحدّث هذه الصفحة إذا تغيّرت طريقة التعامل مع البيانات. للاستفسار: <a href="mailto:hamam@gccapps.com" dir="ltr">hamam@gccapps.com</a> · <a href="https://gccapps.com/ar/support/">الدعم</a>.</p>
+<p class="muted">هذه السياسة تشرح ممارسات التطبيق، ولا تُعدّ استشارة قانونية.</p>
+</section>
+<hr class="divider">
+<section id="english" lang="en" dir="ltr">
+<h2>Privacy Policy</h2>
+<p class="muted">Effective: July 8, 2026 · Last updated: September 20, 2026</p>
+<div class="pledge">We do not collect your Daily Aya usage or send your on-device data to our servers. No accounts, advertising or tracking.</div>
+<h3>Who we are</h3>
+<p>Hamam Alabdulla develops Daily Aya, a free app for reading and reflecting on the Quran. This policy covers versions 1.1 and 1.2.</p>
+<h3>What is stored and why?</h3>
+<p>Reading and search work offline: Quran text, translation and fonts are bundled in the app. Bookmarks, reading position, notes, highlights, interface language and appearance, translation visibility, text sizes, font choices, reminder status and reminder time are stored on your device to provide the features you choose. Your personal device backups may include them if enabled. We cannot access this data.</p>
+<h3>Reminders, sharing and links</h3>
+<p>Daily reminders are optional, require your notification permission and are scheduled locally. You can turn them off in the app or iOS Settings. When you share a verse as text or an image, you choose the destination using the iOS share sheet. Opening this privacy policy or another external link opens your browser; the website provider may process normal connection information under its policy. Your notes and settings are not sent with these links.</p>
+<h3>Basis and purpose</h3>
+<p>The app processes data locally in response to your choices to provide reading, saved content and reminders. If you email support, we use your email address and message to respond to your request only; we do not connect it to app usage data.</p>
+<h3>Third parties and international transfers</h3>
+<p>The app uses no Firebase, analytics, advertising networks or tracking SDKs. Licensed text and fonts are local resources that collect no data. This page is hosted on GitHub Pages; GitHub may process connection information needed to host the website. Email services, personal backups and sharing destinations you choose have their own policies and may process their data outside your country. We do not transfer your reading data from the app to external servers.</p>
+<h3>Retention and security</h3>
+<p>Local data remains until you change or delete it, or delete the app. Backups follow your provider's settings. The app relies on iOS device and app storage protections; protect your device with a passcode. We retain support correspondence as needed to handle your request.</p>
+<h3>Access, deletion and sharing</h3>
+<p>You can view, edit or remove notes and bookmarks inside the app and change preferences in Settings. You can share verses as text or images. There is no cloud service or bulk data export tool. We cannot remotely delete your device data; contact us about requests concerning support correspondence.</p>
+<h3>Children</h3>
+<p>The app is available to a general audience, requires no age or account information, and collects no personal data through the app from children or other users.</p>
+<h3>Changes and contact</h3>
+<p>We update this page if data handling changes. Questions: <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a> · <a href="https://gccapps.com/support/">Support</a>.</p>
+<p class="muted">This policy explains the app's practices and is not legal advice.</p>
+</section>
 </main>
-
-<footer>
-  © 2026 Daily Aya — آية يومية · <a href="mailto:hamam@gccapps.com">hamam@gccapps.com</a>
-</footer>
-
+<footer>© 2026 Hamam Alabdulla · آية يومية — <span lang="en" dir="ltr">Daily Aya</span></footer>
 </body>
 </html>
